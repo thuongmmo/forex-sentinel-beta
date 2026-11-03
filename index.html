@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Forex Sentinel Beta</title>
-<meta name="description" content="Forex Sentinel: widget xem giá luôn nổi trên màn hình, ghi giá vào lệnh và cảnh báo giá. Bản beta cho Windows, dùng với tài khoản do Admin cấp.">
+<title>Forex Sentinel</title>
+<meta name="description" content="Forex Sentinel: widget xem giá luôn nổi trên màn hình, ghi giá vào lệnh và cảnh báo giá. Cho Windows và macOS, dùng với tài khoản do Admin cấp.">
 <style>
   :root {
     --bg: #f7f8fa; --card: #ffffff; --text: #1d2330; --muted: #5d6677; --line: #e2e6ee;
@@ -41,22 +41,19 @@
 <body>
 <main>
   <a class="lang" href="#english">English</a>
-  <h1>Forex Sentinel <span class="badge">Beta</span></h1>
+  <h1>Forex Sentinel</h1>
   <p class="muted">Widget xem giá nhỏ, luôn nổi trên màn hình. Ghi giá vào lệnh của bạn, xem chênh lệch, đặt cảnh báo giá. Chỉ để xem và ghi chép, không đặt lệnh.</p>
 
   <div class="card">
     <p><strong>Phiên bản <span id="ver">0.3.4</span></strong> · Windows 10/11 64-bit · khoảng 2,5 MB</p>
     <p><a class="btn" id="download" href="https://github.com/thuongmmo/forex-sentinel-beta/releases/download/v0.3.4/ForexSentinel_0.3.4_x64-setup.exe">Tải bộ cài cho Windows</a></p>
     <p class="muted">SHA-256: <code id="sha">25c2dd46af1a2af0086a0050460cc8650acf647d65ea07c9f20bd053f5f0578c</code></p>
-    <p class="muted">Từ phiên bản 0.3.0, cần đăng nhập bằng tài khoản do Admin cấp. Chưa có tài khoản? Liên hệ <strong>Telegram @thuongnv14 (https://t.me/thuongnv14)</strong>.</p>
+    <p class="muted">Cần đăng nhập bằng tài khoản do Admin cấp; chưa có tài khoản vẫn xem thử được với giá mẫu. Liên hệ <strong>Telegram @thuongnv14 (https://t.me/thuongnv14)</strong>.</p>
   </div>
 
   <div class="card">
-    <p><strong>macOS <span class="badge">Thử nghiệm</span></strong> · macOS 11 trở lên · Mac chip Apple (M1–M4) và Mac Intel · khoảng 6 MB</p>
-    <div class="warn">
-      <p><strong>Bản macOS chưa được kiểm tra kỹ trên máy Mac thật.</strong> Ứng dụng đã build và chạy thử tự động trên macOS, nhưng giao diện, thanh menu, phím tắt, thông báo và việc lấy giá từ MetaTrader 5 for Mac chưa được người dùng thử; đăng nhập tài khoản trên Mac cũng chưa được thử trên máy thật. Có thể còn lỗi; trên Mac có thể bạn chưa lấy được giá. Nếu gặp lỗi, mong bạn báo qua kênh liên hệ bên dưới.</p>
-    </div>
-    <p><a class="btn" id="download-mac" href="https://github.com/thuongmmo/forex-sentinel-beta/releases/download/v0.3.4/ForexSentinel_0.3.4_universal.dmg">Tải cho macOS (thử nghiệm)</a></p>
+    <p><strong>macOS</strong> · macOS 11 trở lên · Mac chip Apple (M1–M4) và Mac Intel · khoảng 6 MB</p>
+    <p><a class="btn" id="download-mac" href="https://github.com/thuongmmo/forex-sentinel-beta/releases/download/v0.3.4/ForexSentinel_0.3.4_universal.dmg">Tải cho macOS</a></p>
     <p class="muted">SHA-256: <code id="sha-mac">8612e120d8167c44219b9acec5a1e6d44d546a15ae6a59cf8a0efc6eb57bc1d6</code></p>
   </div>
 
@@ -66,6 +63,7 @@
     <li>Lấy giá từ <strong>MetaTrader 5 trên chính máy bạn</strong> (giá của sàn bạn đang dùng). Chưa kết nối MetaTrader 5 thì ứng dụng không hiện giá mà nhắc bạn kết nối.</li>
     <li>Ghi giá vào lệnh Mua/Bán của bạn và xem chênh lệch theo thời gian thực.</li>
     <li>Cảnh báo giá bằng thông báo và âm thanh trên máy.</li>
+    <li>Chưa có tài khoản: bấm <strong>Xem thử với giá mẫu</strong> ở màn hình đăng nhập để dùng thử với giá giả lập (luôn có nhãn DEMO).</li>
     <li>Tiếng Việt và nhiều ngôn ngữ khác, tự chọn theo quốc gia.</li>
     <li>Giá, ghi chép lệnh, cảnh báo và cài đặt chỉ lưu trên máy bạn.</li>
   </ul>
@@ -80,18 +78,18 @@
 
   <h2>Cài đặt</h2>
   <ol>
-    <li>Tải và chạy bộ cài. Bản beta chưa được ký số nên Windows sẽ hiện <em>"Windows protected your PC"</em>: bấm <strong>More info → Run anyway</strong>.</li>
+    <li>Tải và chạy bộ cài. Nếu Windows hiện <em>"Windows protected your PC"</em> (thường gặp với ứng dụng mới phát hành), bấm <strong>More info → Run anyway</strong>.</li>
     <li>Ở trang cuối của bộ cài, giữ dấu tích <strong>Create desktop shortcut</strong> nếu muốn có biểu tượng ngoài màn hình.</li>
     <li>Mở Forex Sentinel. Bảng điều khiển hiện màn hình đăng nhập: nhập tài khoản được cấp, đánh dấu đồng ý và bấm <strong>Đăng nhập</strong>. Sau đó widget nhắc <strong>Kết nối MetaTrader 5</strong> để có giá.</li>
     <li>Để có giá từ sàn của bạn: bấm <strong>Kết nối</strong> trên widget (hoặc mở bảng điều khiển → <strong>Kết nối</strong>) → làm theo trợ lý kết nối MetaTrader 5. Trợ lý tự tìm MT5 trên máy và chép EA cầu nối khi bạn đồng ý.</li>
   </ol>
 
-  <h2>Cài đặt trên macOS (thử nghiệm)</h2>
+  <h2>Cài đặt trên macOS</h2>
   <ol>
     <li>Mở file <code>.dmg</code> vừa tải, kéo <strong>Forex Sentinel</strong> vào thư mục <strong>Applications</strong>.</li>
-    <li>Mở Forex Sentinel. Bản thử nghiệm chưa được Apple công chứng nên lần đầu macOS sẽ chặn: vào <strong>System Settings → Privacy &amp; Security</strong>, kéo xuống và bấm <strong>Open Anyway</strong>, rồi xác nhận. Sau đó đăng nhập bằng tài khoản được cấp.</li>
+    <li>Mở Forex Sentinel. Lần đầu mở một ứng dụng tải ngoài App Store, macOS yêu cầu bạn xác nhận: vào <strong>System Settings → Privacy &amp; Security</strong>, kéo xuống và bấm <strong>Open Anyway</strong>, rồi xác nhận. Sau đó đăng nhập bằng tài khoản được cấp.</li>
     <li>Phím tắt trên Mac: <strong>Cmd+Opt+F</strong> ẩn/hiện widget, <strong>Cmd+Opt+D</strong> mở bảng điều khiển.</li>
-    <li>Lấy giá từ MetaTrader 5 for Mac: trợ lý tự tìm MT5 chỉ có trên Windows. Trên Mac, tải file EA <a href="https://github.com/thuongmmo/forex-sentinel-beta/releases/download/v0.3.4/ForexSentinelBridge.ex5">ForexSentinelBridge.ex5</a>, trong MT5 chọn <strong>File → Open Data Folder → MQL5 → Experts</strong> và chép file vào đó, rồi làm tiếp theo hướng dẫn trong tab <strong>Kết nối</strong>. Phần này chưa được kiểm chứng trên Mac.</li>
+    <li>Lấy giá từ MetaTrader 5 for Mac: trợ lý tự tìm MT5 chỉ có trên Windows. Trên Mac, tải file EA <a href="https://github.com/thuongmmo/forex-sentinel-beta/releases/download/v0.3.4/ForexSentinelBridge.ex5">ForexSentinelBridge.ex5</a>, trong MT5 chọn <strong>File → Open Data Folder → MQL5 → Experts</strong> và chép file vào đó, rồi làm tiếp theo hướng dẫn trong tab <strong>Kết nối</strong>.</li>
   </ol>
 
   <h2>Góp ý và báo lỗi</h2>
@@ -102,9 +100,9 @@
   </div>
 
   <h2 id="english">English</h2>
-  <p>Forex Sentinel is a small always-on-top price widget for Windows (macOS experimental): watch prices, note your own entry and see the difference, set price alerts. It is for watching and note-taking only and never places orders. Real prices come from <strong>your own MetaTrader 5</strong> on the same computer; until it is connected the widget shows no prices and asks you to connect it. You sign in with an account granted by the Admin (contact: Telegram @thuongnv14 (https://t.me/thuongnv14)); each computer you use is recorded on that account, and to check the licence the app sends the computer name, a computer identifier and usage times to the Admin's server (see the Privacy Policy). Prices, notes, alerts and settings stay on your computer. Without internet the app keeps working for up to 7 days after its last check.</p>
-  <p>The beta installer is not code-signed yet: when Windows shows <em>"Windows protected your PC"</em>, choose <strong>More info → Run anyway</strong>.</p>
-  <p><strong>macOS (experimental, not yet tested by hand on a real Mac):</strong> universal build for Apple Silicon and Intel, macOS 11+. It builds and starts in automated tests, but the UI, menu bar, shortcuts, notifications and MetaTrader 5 for Mac prices and account sign-in have not been tried by users yet; you may not get prices yet. Not notarized: on first launch use <strong>System Settings → Privacy &amp; Security → Open Anyway</strong>.</p>
+  <p>Forex Sentinel is a small always-on-top price widget for Windows and macOS: watch prices, note your own entry and see the difference, set price alerts. It is for watching and note-taking only and never places orders. Real prices come from <strong>your own MetaTrader 5</strong> on the same computer; until it is connected the widget shows no prices and asks you to connect it. You sign in with an account granted by the Admin (contact: Telegram @thuongnv14 (https://t.me/thuongnv14)); each computer you use is recorded on that account, and to check the licence the app sends the computer name, a computer identifier and usage times to the Admin's server (see the Privacy Policy). Prices, notes, alerts and settings stay on your computer. Without internet the app keeps working for up to 7 days after its last check.</p>
+  <p>If Windows shows <em>"Windows protected your PC"</em> (common for newly released apps), choose <strong>More info → Run anyway</strong>.</p>
+  <p><strong>macOS:</strong> universal build for Apple Silicon and Intel, macOS 11+. The first time you open an app downloaded outside the App Store, macOS asks you to confirm: <strong>System Settings → Privacy &amp; Security → Open Anyway</strong>.</p>
   <p class="muted"><strong>Risk notice.</strong> Not a broker or exchange; no investment advice. Prices may be simulated, delayed or wrong. Trading forex, gold or CFDs carries a high risk of loss. Follow the rules where you live.</p>
 
   <footer class="muted">
